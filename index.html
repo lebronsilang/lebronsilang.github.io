@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Bron James Silang — Portfolio</title>
+  <meta name="description" content="Portfolio of Le Bron James Silang, Computer Science & Information Engineering student specialising in databases, Python, and cybersecurity." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Skip to main content — screen reader / keyboard shortcut -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav id="navbar" aria-label="Primary navigation">
+
+    <!-- LBS pill-->
+    <a href="#hero" class="nav-pill nav-logo-pill" aria-label="Le Bron James Silang — back to top">
+      <span class="nav-logo" aria-hidden="true">LBS</span>
+    </a>
+
+    <!-- Desktop: nav links pill -->
+    <div class="nav-pill nav-links-pill">
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- desktop: theme toggle pill-->
+    <button class="nav-pill nav-theme-desktop" id="themeToggleDesktop" aria-label="Switch to dark mode">
+      <span class="icon-sun" aria-hidden="true">&#9728;</span>
+      <span class="icon-moon" aria-hidden="true">&#9790;</span>
+    </button>
+
+    <!-- Mobile hamburger pill-->
+    <div class="nav-pill nav-menu-pill" id="navMenuPill">
+      <button class="menu-toggle-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor" aria-hidden="true">
+          <rect y="0"    width="15" height="1.5" rx="0.75"/>
+          <rect y="4.75" width="15" height="1.5" rx="0.75"/>
+          <rect y="9.5"  width="15" height="1.5" rx="0.75"/>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="mobileMenu" role="menu">
+        <a href="#about"          class="mobile-link" role="menuitem">About</a>
+        <a href="#education"      class="mobile-link" role="menuitem">Education</a>
+        <a href="#certifications" class="mobile-link" role="menuitem">Certificates</a>
+        <a href="#skills"         class="mobile-link" role="menuitem">Skills</a>
+        <a href="#contact"        class="mobile-link" role="menuitem">Contact</a>
+        <div class="mobile-divider" role="separator"></div>
+        <button class="mobile-theme-btn" id="themeToggleMobile" aria-label="Switch to dark mode">
+          <span class="mobile-theme-label" aria-hidden="true">
+            <span class="icon-sun">&#9728;&nbsp; Light mode</span>
+            <span class="icon-moon">&#9790;&nbsp; Dark mode</span>
+          </span>
+          <span class="mobile-theme-switch">
+            <span class="theme-switch-knob"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Computer Science &amp; Information Engineering</p>
+      <h1 class="hero-name">Le Bron<br/><span>James Silang</span></h1>
+      <p class="hero-sub">Dual-degree student · Database &amp; Python specialist · Aspiring Cybersecurity Specialist · Based in Taiwan &amp; the Philippines</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-glass">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/lebronsilang/" target="_blank" class="btn-outline">Linkedin ↗</a>
+      </div>
+    </div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <span class="section-label">About</span>
+      <h2>Who I Am</h2>
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <p>I'm a third-year B.S. Computer Science &amp; Information Engineering student pursuing a dual degree between <strong>明新科技大學 (Ming Hsin University of Science &amp; Technology)</strong> (Taiwan) and <strong>Adamson University</strong> (Philippines).</p>
+          <p>I'm drawn to crafting apps that feel good to use and bring a little delight to people's lives, and to protecting people from the threats that come with living in a digital world.</p>
+        </div>
+        <div class="about-stats">
+          <div class="glass-card stat-card">
+            <span class="stat-num">10</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-num">10</span>
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Universities</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-num">3rd</span>
+            <span class="stat-label">Year Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <span class="section-label">Education</span>
+      <h2>Academic Path</h2>
+      <div class="edu-list">
+        <div class="glass-card edu-card">
+          <div class="edu-dot"></div>
+          <div class="edu-info">
+            <h3>明新科技大學 Ming Hsin University of Science &amp; Technology</h3>
+            <p class="edu-degree">B.S. Computer Science &amp; Information Engineering</p>
+            <p class="edu-meta">Hsinchu, Taiwan · Sep 2025 – Jul 2027</p>
+          </div>
+        </div>
+        <div class="glass-card edu-card">
+          <div class="edu-dot"></div>
+          <div class="edu-info">
+            <h3>Adamson University</h3>
+            <p class="edu-degree">Dual Degree – B.S. Computer Science &amp; Information Engineering</p>
+            <p class="edu-meta">Manila, Philippines · Aug 2023 – Dec 2027</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS — JS-rendered into #certRender -->
+  <section id="certifications">
+    <div class="section-inner">
+      <span class="section-label">Licenses &amp; Certifications</span>
+      <h2>Credentials</h2>
+      <div class="cert-filter-bar">
+        <button class="filter-btn is-active" data-sort="default">Featured</button>
+        <button class="filter-btn" data-sort="date">Newest First</button>
+        <button class="filter-btn" data-sort="alpha">A – Z</button>
+      </div>
+      <div id="certRender"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-label">Skills</span>
+      <h2>What I Bring</h2>
+      <div class="skills-wrap">
+        <div class="glass-card skill-pill">Python</div>
+        <div class="glass-card skill-pill">Database Administration</div>
+        <div class="glass-card skill-pill">C#</div>
+        <div class="glass-card skill-pill">JavaScript</div>
+        <div class="glass-card skill-pill">Ubuntu</div>
+        <div class="glass-card skill-pill">Identity &amp; Access Management</div>
+        <div class="glass-card skill-pill">Cybersecurity</div>
+        <div class="glass-card skill-pill">Network Security</div>
+        <div class="glass-card skill-pill">Communication</div>
+        <div class="glass-card skill-pill">English</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-label">Contact</span>
+      <h2>Let's Connect</h2>
+      <div class="contact-wrap glass-card">
+        <!-- Full-bleed photo with name overlay -->
+        <div class="contact-photo-card">
+          <img src="images/profile.jpg" alt="Le Bron James Silang" class="contact-photo" />
+          <div class="contact-photo-overlay">
+            <div class="contact-overlay-name">Le Bron James Silang</div>
+            <div class="contact-overlay-meta">Computer Science &amp; Information Engineering · Taiwan &amp; Philippines</div>
+          </div>
+        </div>
+        <!-- Links list -->
+        <div class="contact-card">
+          <p class="contact-sub">Open to opportunities, collaborations, and conversations. Reach out anytime.</p>
+          <div class="contact-links">
+            <a href="mailto:lebronzsilang@gmail.com" class="contact-link">
+              <span class="clink-icon">✉</span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">lebronzsilang@gmail.com</span>
+              </span>
+            </a>
+            <a href="mailto:lebronsilang@tutamail.com" class="contact-link">
+              <span class="clink-icon">✉</span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Secure Email</span>
+                <span class="contact-link-value">lebronsilang@tutamail.com</span>
+              </span>
+            </a>
+            <a href="https://linkedin.com/in/lebronsilang" target="_blank" class="contact-link">
+              <span class="clink-icon">in</span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/lebronsilang</span>
+              </span>
+            </a>
+            <a href="https://github.com/lebronsilang" target="_blank" class="contact-link">
+              <span class="clink-icon">&#8997;</span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/lebronsilang</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Le Bron James Silang</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
