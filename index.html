@@ -3,115 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Le Bron Silang — Portfolio</title>
+  <title>Le Bron Silang</title>
   <meta name="description" content="Le Bron Silang is a Computer Science & Information Engineering student specialising in databases, Python, and cybersecurity." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Skip to main content — screen reader / keyboard shortcut -->
   <a href="#about" class="skip-link">Skip to main content</a>
 
   <!-- NAV -->
   <nav id="navbar" aria-label="Primary navigation">
-
-    <!-- LBS pill-->
-    <a href="#hero" class="nav-pill nav-logo-pill" aria-label="Le Bron James Silang — back to top">
-      <span class="nav-logo" aria-hidden="true">LBS</span>
-    </a>
-
-    <!-- Desktop: nav links pill -->
-    <div class="nav-pill nav-links-pill">
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certificates</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- desktop: theme toggle pill-->
-    <button class="nav-pill nav-theme-desktop" id="themeToggleDesktop" aria-label="Switch to dark mode">
-      <span class="icon-sun" aria-hidden="true">&#9728;</span>
-      <span class="icon-moon" aria-hidden="true">&#9790;</span>
-    </button>
-
-    <!-- Mobile hamburger pill-->
-    <div class="nav-pill nav-menu-pill" id="navMenuPill">
-      <button class="menu-toggle-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor" aria-hidden="true">
-          <rect y="0"    width="15" height="1.5" rx="0.75"/>
-          <rect y="4.75" width="15" height="1.5" rx="0.75"/>
-          <rect y="9.5"  width="15" height="1.5" rx="0.75"/>
-        </svg>
-      </button>
-      <div class="mobile-menu" id="mobileMenu" role="menu">
-        <a href="#about"          class="mobile-link" role="menuitem">About</a>
-        <a href="#education"      class="mobile-link" role="menuitem">Education</a>
-        <a href="#certifications" class="mobile-link" role="menuitem">Certificates</a>
-        <a href="#skills"         class="mobile-link" role="menuitem">Skills</a>
-        <a href="#contact"        class="mobile-link" role="menuitem">Contact</a>
-        <div class="mobile-divider" role="separator"></div>
-        <button class="mobile-theme-btn" id="themeToggleMobile" aria-label="Switch to dark mode">
-          <span class="mobile-theme-label" aria-hidden="true">
-            <span class="icon-sun">&#9728;&nbsp; Light mode</span>
-            <span class="icon-moon">&#9790;&nbsp; Dark mode</span>
-          </span>
-          <span class="mobile-theme-switch">
-            <span class="theme-switch-knob"></span>
-          </span>
-        </button>
+    <div class="nav-left">
+      <a href="#hero" class="nav-logo" aria-label="Le Bron James Silang — back to top">LBS</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Credentials</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-
+    <div class="nav-right">
+      <button class="theme-btn" id="themeToggleDesktop" aria-label="Toggle colour theme">Dark</button>
+      <button class="hamburger-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true">
+          <rect y="0"   width="18" height="1.5" rx="0.75"/>
+          <rect y="5.25" width="18" height="1.5" rx="0.75"/>
+          <rect y="10.5" width="18" height="1.5" rx="0.75"/>
+        </svg>
+      </button>
+    </div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="menu">
+    <a href="#about"          class="mobile-link" role="menuitem">About</a>
+    <a href="#education"      class="mobile-link" role="menuitem">Education</a>
+    <a href="#certifications" class="mobile-link" role="menuitem">Credentials</a>
+    <a href="#skills"         class="mobile-link" role="menuitem">Skills</a>
+    <a href="#contact"        class="mobile-link" role="menuitem">Contact</a>
+    <button class="theme-btn mobile-link" style="text-align:left;border:none;background:none;cursor:pointer;" aria-label="Toggle colour theme">Dark</button>
+  </div>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Computer Science &amp; Information Engineering</p>
-      <h1 class="hero-name">Le Bron<br/><span>James Silang</span></h1>
-      <p class="hero-sub">Dual-degree student · Database &amp; Python specialist · Aspiring Cybersecurity Specialist · Based in Taiwan &amp; the Philippines</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn-glass">Get in Touch</a>
-        <a href="https://www.linkedin.com/in/lebronsilang/" target="_blank" class="btn-outline">Linkedin ↗</a>
+    <div class="hero-bar">
+      <div class="hero-bar-cell">Location — <span>Manila · Hsinchu</span></div>
+      <div class="hero-bar-cell">Status — <span>3rd Year · Dual Degree</span></div>
+      <div class="hero-bar-cell">Open to — <span>Internships · Collaborations</span></div>
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-name-block">
+        <div class="hero-name">
+          Le<br>Bron<br>
+          <em class="italic">James</em>
+          Silang
+        </div>
+      </div>
+      <div class="hero-aside">
+        <p class="hero-descriptor">
+          <strong>Computer Science &amp; Information Engineering</strong> student building systems that feel good to use — and keeping them safe.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-row">
+            <span class="hero-meta-label">Degree</span>
+            <span class="hero-meta-val">B.S. CSIE — Dual</span>
+          </div>
+          <div class="hero-meta-row">
+            <span class="hero-meta-label">Certs</span>
+            <span class="hero-meta-val">10 Active</span>
+          </div>
+          <div class="hero-meta-row">
+            <span class="hero-meta-label">Focus</span>
+            <span class="hero-meta-val">Databases · Security · SWE</span>
+          </div>
+          <div class="hero-meta-row">
+            <span class="hero-meta-label">Portfolio</span>
+            <span class="hero-meta-val">2025</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-orb orb1"></div>
-    <div class="hero-orb orb2"></div>
+
+    <div class="hero-footer">
+      <a href="#contact"                              class="hero-cta"><span>Get in Touch</span><span class="arr">↓</span></a>
+      <a href="https://linkedin.com/in/lebronsilang"  target="_blank" rel="noopener" class="hero-cta"><span>LinkedIn</span><span class="arr">↗</span></a>
+      <a href="https://github.com/lebronsilang"       target="_blank" rel="noopener" class="hero-cta"><span>GitHub</span><span class="arr">↗</span></a>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="section-inner">
-      <span class="section-label">About</span>
-      <h2>Who I Am</h2>
-      <div class="about-grid">
-        <div class="glass-card about-card">
-          <p>I'm a third-year B.S. Computer Science &amp; Information Engineering student pursuing a dual degree between <strong>明新科技大學 (Ming Hsin University of Science &amp; Technology)</strong> (Taiwan) and <strong>Adamson University</strong> (Philippines).</p>
-          <p>I'm drawn to crafting apps that feel good to use and bring a little delight to people's lives, and to protecting people from the threats that come with living in a digital world.</p>
+    <div class="sec-head">
+      <span class="sec-num">01 — About</span>
+      <span class="sec-title">Who I Am</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-index">
+        <div class="about-stat">
+          <div class="about-stat-n">10</div>
+          <div class="about-stat-l">Certifications</div>
         </div>
-        <div class="about-stats">
-          <div class="glass-card stat-card">
-            <span class="stat-num">10</span>
-            <span class="stat-label">Certifications</span>
-          </div>
-          <div class="glass-card stat-card">
-            <span class="stat-num">10</span>
-            <span class="stat-label">Skills</span>
-          </div>
-          <div class="glass-card stat-card">
-            <span class="stat-num">2</span>
-            <span class="stat-label">Universities</span>
-          </div>
-          <div class="glass-card stat-card">
-            <span class="stat-num">3rd</span>
-            <span class="stat-label">Year Student</span>
-          </div>
+        <div class="about-stat">
+          <div class="about-stat-n">2</div>
+          <div class="about-stat-l">Universities</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-n">3</div>
+          <div class="about-stat-l">Year</div>
+        </div>
+      </div>
+      <div class="about-body">
+        <p class="about-pull">Building things that feel good to use — and <em>keeping them safe.</em></p>
+        <p class="about-text">
+          I'm a third-year <strong>B.S. Computer Science &amp; Information Engineering</strong> student pursuing a dual degree between <strong>明新科技大學 (Ming Hsin University of Science &amp; Technology)</strong> in Hsinchu, Taiwan and <strong>Adamson University</strong> in Manila, Philippines. I'm drawn to the intersection of software engineering and cybersecurity — making systems that are both functional and resilient.
+        </p>
+      </div>
+      <div class="about-right">
+        <p class="about-tag-head">Currently working with</p>
+        <div class="about-tag-list">
+          <div class="about-tag">Python <div class="about-tag-dot"></div></div>
+          <div class="about-tag">C# / .NET MAUI <div class="about-tag-dot"></div></div>
+          <div class="about-tag">JavaScript <div class="about-tag-dot"></div></div>
+          <div class="about-tag">SQLite / SQL <div class="about-tag-dot"></div></div>
+          <div class="about-tag">Ubuntu / Linux <div class="about-tag-dot"></div></div>
+          <div class="about-tag">Git <div class="about-tag-dot"></div></div>
         </div>
       </div>
     </div>
@@ -119,118 +136,146 @@
 
   <!-- EDUCATION -->
   <section id="education">
-    <div class="section-inner">
-      <span class="section-label">Education</span>
-      <h2>Academic Path</h2>
-      <div class="edu-list">
-        <div class="glass-card edu-card">
-          <div class="edu-dot"></div>
-          <div class="edu-info">
-            <h3>明新科技大學 Ming Hsin University of Science &amp; Technology</h3>
-            <p class="edu-degree">B.S. Computer Science &amp; Information Engineering</p>
-            <p class="edu-meta">Hsinchu, Taiwan · Sep 2025 – Jul 2027</p>
+    <div class="sec-head">
+      <span class="sec-num">02 — Education</span>
+      <span class="sec-title">Academic Path</span>
+    </div>
+    <div class="edu-items">
+      <div class="edu-item">
+        <div class="edu-n">01</div>
+        <div class="edu-content">
+          <div class="edu-school">
+            <span class="edu-school-cn">明新科技大學</span>
+            Ming Hsin University of Science &amp; Technology
           </div>
+          <div class="edu-degree">B.S. Computer Science &amp; Information Engineering</div>
+          <div class="edu-loc">Hsinchu, Taiwan</div>
         </div>
-        <div class="glass-card edu-card">
-          <div class="edu-dot"></div>
-          <div class="edu-info">
-            <h3>Adamson University</h3>
-            <p class="edu-degree">Dual Degree – B.S. Computer Science &amp; Information Engineering</p>
-            <p class="edu-meta">Manila, Philippines · Aug 2023 – Dec 2027</p>
-          </div>
+        <div class="edu-dates">Sep 2025 — Jul 2027</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-n">02</div>
+        <div class="edu-content">
+          <div class="edu-school">Adamson University</div>
+          <div class="edu-degree">Dual Degree — B.S. Computer Science &amp; Information Engineering</div>
+          <div class="edu-loc">Manila, Philippines</div>
         </div>
+        <div class="edu-dates">Aug 2023 — Dec 2027</div>
       </div>
     </div>
   </section>
 
-  <!-- CERTIFICATIONS — JS-rendered into #certRender -->
+  <!-- INTERLUDE -->
+  <div class="interlude">
+    <div class="interlude-text">
+      Building<br>
+      with <em>precision.</em><br>
+      Defending<br>
+      by design.
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
   <section id="certifications">
-    <div class="section-inner">
-      <span class="section-label">Licenses &amp; Certifications</span>
-      <h2>Credentials</h2>
-      <div class="cert-filter-bar">
-        <button class="filter-btn is-active" data-sort="default">Featured</button>
-        <button class="filter-btn" data-sort="date">Newest First</button>
-        <button class="filter-btn" data-sort="alpha">A – Z</button>
-      </div>
-      <div id="certRender"></div>
+    <div class="sec-head">
+      <span class="sec-num">03 — Credentials</span>
+      <span class="sec-title">Licenses &amp; Certifications</span>
+    </div>
+
+    <div class="cert-controls">
+      <button class="filter-btn is-active" data-sort="default">Featured</button>
+      <button class="filter-btn" data-sort="date">Newest First</button>
+      <button class="filter-btn" data-sort="alpha">A – Z</button>
+    </div>
+
+    <div class="cert-table">
+      <div id="certTableBody"></div>
+      <button class="cert-expand-btn" id="certExpandBtn" style="display:none;">
+        View all certifications <span class="arr">↓</span>
+      </button>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
-    <div class="section-inner">
-      <span class="section-label">Skills</span>
-      <h2>What I Bring</h2>
-      <div class="skills-wrap">
-        <div class="glass-card skill-pill">Python</div>
-        <div class="glass-card skill-pill">Database Administration</div>
-        <div class="glass-card skill-pill">C#</div>
-        <div class="glass-card skill-pill">JavaScript</div>
-        <div class="glass-card skill-pill">Ubuntu</div>
-        <div class="glass-card skill-pill">Identity &amp; Access Management</div>
-        <div class="glass-card skill-pill">Cybersecurity</div>
-        <div class="glass-card skill-pill">Network Security</div>
-        <div class="glass-card skill-pill">Communication</div>
-        <div class="glass-card skill-pill">English</div>
+    <div class="sec-head">
+      <span class="sec-num">04 — Skills</span>
+      <span class="sec-title">What I Bring</span>
+    </div>
+    <div class="skills-split">
+      <div class="skills-left">
+        <div class="skills-big">Strong<br>foundations,<br><em>real code.</em></div>
+        <p class="skills-desc">I'm early in my career and building depth over breadth. My work sits at the intersection of software engineering and security — making things that are both functional and safe. Every project I ship is something I can explain end to end.</p>
+      </div>
+      <div class="skills-right">
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-list">
+            <div class="skill-item">Python <div class="skill-dot"></div></div>
+            <div class="skill-item">C# <div class="skill-dot"></div></div>
+            <div class="skill-item">JavaScript <div class="skill-dot"></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Data &amp; Infrastructure</div>
+          <div class="skill-list">
+            <div class="skill-item">SQLite / SQL <div class="skill-dot"></div></div>
+            <div class="skill-item">Ubuntu / Linux <div class="skill-dot"></div></div>
+            <div class="skill-item">Git <div class="skill-dot"></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Architecture &amp; Methodology</div>
+          <div class="skill-list">
+            <div class="skill-item">MVVM <div class="skill-dot"></div></div>
+            <div class="skill-item">Unit Testing <div class="skill-dot"></div></div>
+            <div class="skill-item">Dependency Injection <div class="skill-dot"></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="section-inner">
-      <span class="section-label">Contact</span>
-      <h2>Let's Connect</h2>
-      <div class="contact-wrap glass-card">
-        <!-- Full-bleed photo with name overlay -->
-        <div class="contact-photo-card">
-          <img src="images/profile.jpg" alt="Le Bron James Silang" class="contact-photo" />
-          <div class="contact-photo-overlay">
-            <div class="contact-overlay-name">Le Bron James Silang</div>
-            <div class="contact-overlay-meta">Computer Science &amp; Information Engineering · Taiwan &amp; Philippines</div>
-          </div>
-        </div>
-        <!-- Links list -->
-        <div class="contact-card">
-          <p class="contact-sub">Open to opportunities, collaborations, and conversations. Reach out anytime.</p>
-          <div class="contact-links">
-            <a href="mailto:lebronzsilang@gmail.com" class="contact-link">
-              <span class="clink-icon">✉</span>
-              <span class="contact-link-text">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-value">lebronzsilang@gmail.com</span>
-              </span>
-            </a>
-            <a href="mailto:lebronsilang@tutamail.com" class="contact-link">
-              <span class="clink-icon">✉</span>
-              <span class="contact-link-text">
-                <span class="contact-link-label">Secure Email</span>
-                <span class="contact-link-value">lebronsilang@tutamail.com</span>
-              </span>
-            </a>
-            <a href="https://linkedin.com/in/lebronsilang" target="_blank" class="contact-link">
-              <span class="clink-icon">in</span>
-              <span class="contact-link-text">
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-value">linkedin.com/in/lebronsilang</span>
-              </span>
-            </a>
-            <a href="https://github.com/lebronsilang" target="_blank" class="contact-link">
-              <span class="clink-icon">&#8997;</span>
-              <span class="contact-link-text">
-                <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-value">github.com/lebronsilang</span>
-              </span>
-            </a>
-          </div>
-        </div>
+    <div class="sec-head">
+      <span class="sec-num">05 — Contact</span>
+      <span class="sec-title">Get In Touch</span>
+    </div>
+    <div class="contact-split">
+      <div class="contact-left">
+        <div class="contact-big">Let's<br><em>work<br>together.</em></div>
+        <p class="contact-note">Open to internships, collaborations, and conversations. Reach out through any of these channels — I respond within 24 hours.</p>
+      </div>
+      <div class="contact-right">
+        <a href="mailto:lebronzsilang@gmail.com" class="contact-row">
+          <span class="contact-type">Email</span>
+          <span class="contact-val">lebronzsilang@gmail.com</span>
+          <span class="contact-arr">↗</span>
+        </a>
+        <a href="mailto:lebronsilang@tutamail.com" class="contact-row">
+          <span class="contact-type">Secure</span>
+          <span class="contact-val">lebronsilang@tutamail.com</span>
+          <span class="contact-arr">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/lebronsilang" target="_blank" rel="noopener" class="contact-row">
+          <span class="contact-type">LinkedIn</span>
+          <span class="contact-val">linkedin.com/in/lebronsilang</span>
+          <span class="contact-arr">↗</span>
+        </a>
+        <a href="https://github.com/lebronsilang" target="_blank" rel="noopener" class="contact-row">
+          <span class="contact-type">GitHub</span>
+          <span class="contact-val">github.com/lebronsilang</span>
+          <span class="contact-arr">↗</span>
+        </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Le Bron James Silang</p>
+    <span class="footer-logo">LBS</span>
+    <span class="footer-copy">© 2025 Le Bron James Silang. All rights reserved.</span>
+    <span class="footer-field">CS &amp; Information Engineering</span>
   </footer>
 
   <script src="script.js"></script>
