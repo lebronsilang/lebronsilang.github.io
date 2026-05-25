@@ -778,7 +778,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 32px;
+  gap: 24px;
 }
 
 .proj-featured-stats {
@@ -804,6 +804,13 @@ footer {
   letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--green);
 }
+
+.proj-cta-secondary {
+  margin-top: -16px;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+.proj-cta-secondary:hover { color: var(--fg); }
 
 /* Academic projects list */
 .proj-academic-head {
@@ -894,6 +901,7 @@ footer {
   display: flex;
   align-items: flex-start;
   overflow-x: auto;
+  padding-top: 8px;
   padding-bottom: 16px;
   gap: 0;
   scrollbar-width: none;
@@ -1278,7 +1286,7 @@ footer {
 .ftl-legend {
   display: flex;
   gap: 32px;
-  padding: 0 48px 40px;
+  padding: 40px 48px 40px;
   flex-wrap: wrap;
 }
 
