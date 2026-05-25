@@ -441,12 +441,12 @@ section { padding: 0; }
   gap: 32px;
   padding: 20px 0;
   align-items: center;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   transition: opacity 0.15s;
   cursor: default;
 }
 
-.cert-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.1); }
+.cert-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 .cert-row:hover { opacity: 0.55; }
 .cert-row.has-link { cursor: pointer; }
 
@@ -529,7 +529,7 @@ section { padding: 0; }
   display: flex; justify-content: space-between; align-items: center;
   font-size: 14px; font-weight: 500; color: var(--fg);
   padding: 10px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   transition: opacity 0.15s;
 }
 .skill-item:last-child { border-bottom: none; }
@@ -691,13 +691,13 @@ footer {
 .proj-featured-wrap {
   padding: 0 48px;
   margin-bottom: 0;
+  border-top: 1px solid rgba(110, 110, 100, 0.15);
   border-bottom: 1px solid rgba(110, 110, 100, 0.15);
 }
 
 .proj-featured {
   display: block;
   padding: 48px 0;
-  border-top: 1px solid rgba(110, 110, 100, 0.15);
   transition: opacity 0.15s;
   color: inherit;
 }
@@ -810,7 +810,7 @@ footer {
   display: flex;
   align-items: baseline;
   gap: 24px;
-  padding: 32px 48px 0;
+  padding: 32px 48px 16px;
 }
 
 .proj-academic-label {
@@ -838,10 +838,10 @@ footer {
   gap: 32px;
   align-items: start;
   padding: 24px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   transition: opacity 0.15s;
 }
-.proj-academic-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.1); }
+.proj-academic-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 .proj-academic-item:hover { opacity: 0.6; }
 
 .proj-ac-n { font-size: 11px; color: var(--muted); padding-top: 4px; }
@@ -994,7 +994,7 @@ footer {
   gap: 0 20px;
   align-items: center;
   padding: 16px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   transition: opacity 0.15s;
 }
 .tl-highlight-row:hover { opacity: 0.6; }
@@ -1152,9 +1152,9 @@ footer {
   gap: 32px;
   align-items: start;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
 }
-.proj-feature-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.1); }
+.proj-feature-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 
 .proj-feature-n { font-size: 11px; color: var(--muted); padding-top: 2px; }
 .proj-feature-name { font-size: 14px; font-weight: 600; }
@@ -1173,10 +1173,10 @@ footer {
   grid-template-columns: 200px 1fr;
   gap: 32px;
   padding: 16px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   align-items: center;
 }
-.proj-tech-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.1); }
+.proj-tech-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 
 .proj-tech-layer {
   font-size: 10px; font-weight: 700;
@@ -1198,10 +1198,10 @@ footer {
   grid-template-columns: 24px 1fr;
   gap: 20px;
   padding: 14px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.08);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   align-items: center;
 }
-.proj-roadmap-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.08); }
+.proj-roadmap-item:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 
 .proj-roadmap-check {
   width: 10px; height: 10px;
@@ -1224,9 +1224,9 @@ footer {
   grid-template-columns: 200px 1fr;
   gap: 32px;
   padding: 18px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
 }
-.proj-team-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.1); }
+.proj-team-row:first-child { border-top: 1px solid rgba(110, 110, 100, 0.12); }
 
 .proj-team-name { font-size: 14px; font-weight: 600; }
 .proj-team-role { font-size: 13px; color: var(--muted); line-height: 1.5; }
@@ -1319,7 +1319,7 @@ footer {
   gap: 0 20px;
   align-items: center;
   padding: 18px 0;
-  border-bottom: 1px solid rgba(110, 110, 100, 0.08);
+  border-bottom: 1px solid rgba(110, 110, 100, 0.12);
   transition: opacity 0.15s;
 }
 .ftl-entry:hover { opacity: 0.65; }

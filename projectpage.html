@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tally: Aesthetic Budget</title>
+  <title>Tally - Le Bron Silang</title>
   <meta name="description" content="Tally: an aesthetic personal finance app built in .NET MAUI with C#, SQLite, and MVVM architecture." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="images/icon.svg">
 </head>
 <body>
 
@@ -72,7 +71,7 @@
         </div>
         <div class="proj-page-meta-item">
           <div class="proj-page-meta-label">Year</div>
-          <div class="proj-page-meta-val">2026 - Ongoing</div>
+          <div class="proj-page-meta-val">2025 - Ongoing</div>
         </div>
         <div class="proj-page-meta-item">
           <div class="proj-page-meta-label">Stack</div>
@@ -95,8 +94,8 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;padding-bottom:56px;" class="proj-overview-grid">
       <div>
         <p class="about-pull" style="font-size:clamp(20px,2.5vw,28px);margin-bottom:24px;">Started as a school project. Became something <em>personal.</em></p>
-        <p class="about-text">Every finance app I'd used felt clinical — rows of numbers in a utilitarian grid. Tally started as a Software Project Management deliverable, but the concept came from a real frustration with how cold money-tracking tools looked and felt.</p>
-        <p class="about-text" style="margin-top:16px;">Tally combines a visual, Pinterest-style spending journal with real budgeting tools, a grocery tracker, and a dream board that's all wrapped in a themeable, minimal interface. The app development continues past the semester because the problem it solves is real.</p>
+        <p class="about-text">Every finance app I'd used felt clinical - rows of numbers in a utilitarian grid. Tally started as a Software Project Management deliverable, but the concept came from a real frustration with how cold money-tracking tools looked and felt.</p>
+        <p class="about-text" style="margin-top:16px;">Tally combines a visual, Pinterest-style spending journal with real budgeting tools, a grocery tracker, and a dream board - all wrapped in a themeable, minimal interface. The app development continues past the semester because the problem it solves is real.</p>
       </div>
       <div>
         <div class="proj-featured-stats" style="justify-content:flex-start;gap:48px;margin-bottom:40px;">
@@ -131,7 +130,7 @@
       <div class="proj-feature-item">
         <div class="proj-feature-n">01</div>
         <div class="proj-feature-name">Feed - Spending Journal</div>
-        <div class="proj-feature-desc">Expenses rendered as cards in an adaptive masonry grid of 2 to 5 columns based on window width. Cards with a photo get a full-bleed image with a gradient overlay. Filter by all time, a specific month, or the current year.</div>
+        <div class="proj-feature-desc">Expenses rendered as cards in an adaptive masonry grid - 2 to 5 columns based on window width. Cards with a photo get a full-bleed image with a gradient overlay. Filter by all time, a specific month, or the current year.</div>
       </div>
       <div class="proj-feature-item">
         <div class="proj-feature-n">02</div>
@@ -156,7 +155,7 @@
       <div class="proj-feature-item">
         <div class="proj-feature-n">06</div>
         <div class="proj-feature-name">Themes</div>
-        <div class="proj-feature-desc">Six presets - Clean Minimal, Sakura Bloom, Mocha Latte, Ocean Mist, Forest Dew, Midnight, and a custom palette picker for background, accent, card, and text colours. Theme changes rebuild the shell immediately so every screen updates at once.</div>
+        <div class="proj-feature-desc">Six presets - Clean Minimal, Sakura Bloom, Mocha Latte, Ocean Mist, Forest Dew, Midnight - plus a custom palette picker for background, accent, card, and text colours. Theme changes rebuild the shell immediately so every screen updates at once.</div>
       </div>
     </div>
   </div>
@@ -198,7 +197,7 @@
       </div>
       <div class="proj-tech-row">
         <div class="proj-tech-layer">Theme Storage</div>
-        <div class="proj-tech-val">Microsoft.Maui.Storage.Preferences (not SQLite — themes are settings, not data)</div>
+        <div class="proj-tech-val">Microsoft.Maui.Storage.Preferences (not SQLite - themes are settings, not data)</div>
       </div>
     </div>
   </div>
@@ -211,24 +210,24 @@
     </div>
     <div class="proj-feature-list">
       <div class="proj-feature-item">
-        <div class="proj-feature-n">—</div>
+        <div class="proj-feature-n">-</div>
         <div class="proj-feature-name">Dependency Injection</div>
         <div class="proj-feature-desc">Configured in MauiProgram.cs. Services registered as singletons; ViewModels and Pages as transients. This keeps services alive across navigation while pages stay lightweight and garbage-collectable.</div>
       </div>
       <div class="proj-feature-item">
-        <div class="proj-feature-n">—</div>
+        <div class="proj-feature-n">-</div>
         <div class="proj-feature-name">Theme System</div>
-        <div class="proj-feature-desc">Writes colour values directly into Application.Current.Resources at runtime. When a theme changes, ThemeService.ReloadShell() replaces MainPage with a fresh AppShell so every page picks up the new palette immediately — no page refresh or navigation required.</div>
+        <div class="proj-feature-desc">Writes colour values directly into Application.Current.Resources at runtime. When a theme changes, ThemeService.ReloadShell() replaces MainPage with a fresh AppShell so every page picks up the new palette immediately - no page refresh or navigation required.</div>
       </div>
       <div class="proj-feature-item">
-        <div class="proj-feature-n">—</div>
+        <div class="proj-feature-n">-</div>
         <div class="proj-feature-name">Masonry Grid</div>
-        <div class="proj-feature-desc">Built programmatically in code-behind (FeedPage.xaml.cs, WishlistPage.xaml.cs) — intentionally, because layout construction that depends on measured widths doesn't belong in a ViewModel. The XAML file for those pages contains only a named MasonryGrid container.</div>
+        <div class="proj-feature-desc">Built programmatically in code-behind (FeedPage.xaml.cs, WishlistPage.xaml.cs) - intentionally, because layout construction that depends on measured widths doesn't belong in a ViewModel. The XAML file for those pages contains only a named MasonryGrid container.</div>
       </div>
       <div class="proj-feature-item">
-        <div class="proj-feature-n">—</div>
+        <div class="proj-feature-n">-</div>
         <div class="proj-feature-name">Shared Add / Edit Page</div>
-        <div class="proj-feature-desc">Add and Edit expense share one page. The route passes an ExpenseId query parameter; IsEditMode on the ViewModel drives the page title, subtitle, and button label — no duplicate code, no duplicate XAML.</div>
+        <div class="proj-feature-desc">Add and Edit expense share one page. The route passes an ExpenseId query parameter; IsEditMode on the ViewModel drives the page title, subtitle, and button label - no duplicate code, no duplicate XAML.</div>
       </div>
     </div>
   </div>
@@ -300,7 +299,7 @@
   <footer>
     <a href="index.html#projects" class="footer-logo" style="text-decoration:none;">← Projects</a>
     <span class="footer-copy">© 2026 Le Bron James Silang</span>
-    <span class="footer-field">Tally — Aesthetic Budget</span>
+    <span class="footer-field">Tally - Aesthetic Budget</span>
   </footer>
 
   <script>
